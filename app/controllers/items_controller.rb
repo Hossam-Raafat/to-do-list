@@ -6,12 +6,12 @@ class ItemsController < ApplicationController
     end
   end
 
-  def show
-    @item = Item.find(params[:id])
-    respond_to do |format|
-      format.json { render :json => @item }
-    end
-  end
+  # def show
+  #   @item = Item.find(params[:id])
+  #   respond_to do |format|
+  #     format.json { render :json => @item }
+  #   end
+  # end
 
 
   def create
@@ -44,7 +44,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     @item.destroy
     respond_to do |format|
-      format.json { render :json => @items }
+      format.json { render :json => @item }
     end
 
 

@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Item.create(body: 'get eggs')
+Item.create(body: 'beat darksouls3')
+Item.create(body: 'git gud', status: true)
